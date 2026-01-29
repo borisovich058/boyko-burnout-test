@@ -51,7 +51,7 @@ export const ResultView: React.FC<ResultViewProps> = ({ result, onReset }) => {
         </div>
       </div>
 
-      {(['tension', 'resistance', 'exhaustion'] as Phase[]).map((phase, index) => {
+      {(['tension', 'resistance', 'exhaustion'] as Phase[]).map((phase) => {
         const phaseResult = result[phase];
         
         return (
